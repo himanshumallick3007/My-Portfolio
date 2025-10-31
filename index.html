@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himanshu Mallick | Data Science Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4F46E5', // Indigo
+                        'secondary': '#10B981', // Emerald
+                        'dark-bg': '#0F172A', // Slate 900
+                        'dark-card': '#1E293B', // Slate 800
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Icons Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- NOTE: Removed the local file link: c:\Users\HP\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\hm_edited.jpg -->
+</head>
+
+<body class="bg-dark-bg text-gray-100 font-sans">
+    <!--section id="reports" class="section bg-dark-card"></section>
+    <!-- ======= NAVBAR ======= -->
+    <header class="sticky top-0 z-50 shadow-lg bg-dark-card/95 backdrop-blur-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="logo text-2xl font-bold text-primary">Himanshu's Portfolio</div>
+            <ul class="nav-links hidden md:flex space-x-6 text-lg font-medium">
+                <li><a href="#home" class="hover:text-primary transition duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-primary transition duration-300">About</a></li>
+                <li><a href="#experience" class="hover:text-primary transition duration-300">Internship Experience</a>
+                </li>
+                <li><a href="#education" class="hover:text-primary transition duration-300">Education</a></li>
+                <li><a href="#skills" class="hover:text-primary transition duration-300">Skills</a></li>
+                <li><a href="#certifications" class="hover:text-primary transition duration-300">Certifications</a></li>
+                <li><a href="#projects" class="hover:text-primary transition duration-300">Projects</a></li>
+                <li><a href="#reports" class="hover:text-primary transition duration-300">Reports</a></li>
+                <li><a href="#contact" class="hover:text-primary transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Utility for section padding -->
+        <style>
+            .section {
+                padding: 4rem 0;
+            }
+
+            .section-title {
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
+                color: #fff;
+                position: relative;
+            }
+
+            .section-title::after {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 4px;
+                background-color: #4F46E5;
+                margin: 0.5rem auto 0;
+                border-radius: 2px;
+            }
+        </style>
+
+        <!-- ======= HERO SECTION ======= -->
+        <section id="home" class="hero bg-dark-bg min-h-screen flex items-center justify-center p-4">
+            <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+
+                <div class="hero-content max-w-xl text-center lg:text-left animate-fade-in">
+                    <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight">
+                        Hello, I'm <span class="highlight text-primary">Himanshu Mallick</span>
+                    </h1>
+                    <h2 class="text-3xl sm:text-4xl font-semibold mt-4 text-secondary">
+                        A Passionate <span id="typing"></span>
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-400">Crafting data-driven solutions with creativity and precision.
+                    </p>
+
+                    <div class="mt-8 flex justify-center lg:justify-start space-x-4">
+                        <a href="#contact"
+                            class="btn bg-primary hover:bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg shadow-xl transition duration-300 transform hover:scale-105">
+                            Let's Connect <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <!-- Links from CV -->
+                        <a href="https://github.com/himanshumallick3007" target="_blank"
+                            class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-5 rounded-lg transition duration-300 transform hover:scale-105"
+                            title="GitHub Profile">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/himanshu-mallick-2386872a5/" target="_blank"
+                            class="bg-[#0A66C2] hover:bg-[#0855A0] text-white font-bold py-3 px-5 rounded-lg transition duration-300 transform hover:scale-105"
+                            title="LinkedIn Profile">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://x.com/HimanshuMa2004" target="_blank"
+                            class="bg-black hover:bg-[#1a1a1a] text-white font-bold py-3 px-5 rounded-lg transition duration-300 transform hover:scale-105"
+                            title="X Profile">
+                            <i class="fab fa-x-twitter text-xl"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/@EduVerseHimanshu" target="_blank"
+                            class="bg-[#FF0000] hover:bg-[#CC0000] text-white font-bold py-3 px-5 rounded-lg transition duration-300 transform hover:scale-105"
+                            title="YouTube Channel">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="hero-image relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-primary animate-float">
+                    <img src="./hm.jpg" alt="Himanshu Mallick"
+                        class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= ABOUT SECTION ======= -->
+        <section id="about" class="about section bg-dark-card">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">About Me</h2>
+                <div
+                    class="about-content max-w-4xl mx-auto text-center p-6 bg-dark-card rounded-xl shadow-2xl border border-gray-700">
+                    <p class="text-xl leading-relaxed text-gray-300">
+                        I’m a B.Tech CSE student at the Government College of Engineering and Textile Technology,
+                        Berhampore. I have a keen
+                        interest in Data Science and AI, backed by strong programming skills in Python and C++. I'm
+                        experienced in data analysis and
+                        visualization using tools like Pandas, NumPy, and Matplotlib. Through academic and personal
+                        projects, I've developed a passion
+                        for uncovering insights from data and building intelligent, real-world solutions. I’m eager to
+                        grow my expertise in machine learning,
+                        and statistical modeling.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= EXPERIENCE SECTION (New) ======= -->
+        <section id="experience" class="section bg-dark-bg">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">Internship Experience</h2>
+                <div class="max-w-4xl mx-auto space-y-8">
+
+                    <!-- Experience 1 -->
+                    <div
+                        class="bg-dark-card p-6 rounded-xl shadow-lg border-l-4 border-primary hover:shadow-2xl transition duration-300">
+                        <p class="text-sm text-primary font-mono mb-1">Sept 2025 - Oct 2025</p>
+                        <h3 class="text-2xl font-semibold text-white">Data Science & Analytcs internship</h3>
+                        <p class="text-lg text-gray-300 mt-1">Zidio Development</p>
+                        <p class="text-md text-gray-400 mt-2">to solve real business problems using data science
+                            techniques, while tailoring your resume and applications to emphasize
+                            relevant skills and business impact.</p>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div
+                        class="bg-dark-card p-6 rounded-xl shadow-lg border-l-4 border-secondary hover:shadow-2xl transition duration-300">
+                        <p class="text-sm text-secondary font-mono mb-1">May 2024 - Jul 2024</p>
+                        <h3 class="text-2xl font-semibold text-white">Data Science and AIML Internship</h3>
+                        <p class="text-lg text-gray-300 mt-1">Ybi Foundation</p>
+                        <p class="text-md text-gray-400 mt-2">Focused on practical application of ML/AI concepts.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= EDUCATION SECTION (New) ======= -->
+        <section id="education" class="section bg-dark-card">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">Education</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+
+                    <!-- B.Tech -->
+                    <div
+                        class="bg-dark-bg p-6 rounded-xl shadow-lg border-l-4 border-secondary transition duration-300">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-semibold text-white">B.Tech (CSE)</h3>
+                            <span class="text-sm text-gray-400">2023 - 2027</span>
+                        </div>
+                        <p class="text-lg text-primary mt-1">GOVERNMENT COLLEGE OF ENGINEERING AND TEXTILE TECHNOLOGY,
+                            BERHAMPORE</p>
+                        <p class="text-md text-gray-300 mt-2">CGPA: 7.45</p>
+                    </div>
+
+                    <!-- Intermediate Science (Placeholder for previous education if needed) -->
+                    <!-- I will leave this out to keep the focus on the B.Tech, as the CV provided limited data on intermediate. -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= SKILLS SECTION (Updated with Tailwind) ======= -->
+        <section id="skills" class="skills section bg-dark-bg">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Skills from previous interaction and CV -->
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        Python</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        C++</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        Data Analysis</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        Machine Learning</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        HTML & CSS</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        SQL</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        Mathematics & Statistics</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        Statistical Analysis</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        Data Structures & Algorithms</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        Deep Learning & Neural Network</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        Data Visualization</div>
+                    <div
+                        class="skill-card bg-dark-card p-4 rounded-lg text-center font-medium text-lg border border-primary/50 hover:bg-primary hover:text-white transition duration-300 shadow-md transform hover:scale-105">
+                        Power BI</div>
+                    <div </div>
+                    </div>
+        </section>
+
+        <!-- ======= CERTIFICATIONS SECTION (New) ======= -->
+        <section id="certifications" class="section bg-dark-card">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">Certifications</h2>
+                <div class="max-w-4xl mx-auto space-y-6">
+
+                    <!-- Certification 1 -->
+                    <div class="bg-dark-bg p-6 rounded-xl shadow-lg border-l-4 border-primary transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white">Infosys Springboard- Introduction to Data Science
+                        </h3>
+                    </div>
+
+                    <!-- Certification 2 -->
+                    <div class="bg-dark-bg p-6 rounded-xl shadow-lg border-l-4 border-primary transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white">Deloitte Astralia- Data Analytics Job Simulation
+                        </h3>
+                    </div>
+
+                    <!-- Certification 3 -->
+                    <div class="bg-dark-bg p-6 rounded-xl shadow-lg border-l-4 border-primary transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white">Tata - GenAI Powered Data Analytics Job Simulation
+                        </h3>
+                    </div>
+                    <!-- Certification 4 -->
+                    <div class="bg-dark-bg p-6 rounded-xl shadow-lg border-l-4 border-primary transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white">Artificial Intelligence & Statistical
+                            Techniques
+                            in Textile Manufacturing</h3>
+                        <p class="text-lg text-secondary mt-1">AICTE Training And Learning (ATAL) Academy</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ======= PROJECTS SECTION (Updated with Tailwind) ======= -->
+        <section id="projects" class="projects section bg-dark-bg">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-cards max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <div
+                        class="project-card bg-dark-card p-6 rounded-xl shadow-xl border border-gray-700 transform hover:scale-[1.02] transition duration-300">
+                        <h3 class="text-2xl font-bold text-primary mb-2">covid 19 data analysis</h3>
+                        <p class="text-gray-300">
+                            An analysis of COVID-19 data uses various techniques and technologies to identify trends,
+                            predict outcomes, and provide
+                            insights that aid in public health policy, resource allocation, and medical research. This
+                            involves collecting vast
+                            datasets from sources like the World Health Organization (WHO), Johns Hopkins University,
+                            and government health
+                            agencies.
+                        </p>
+                        <!-- Add a placeholder link -->
+                        <a href="https://github.com/himanshumallick3007/covid-19-data-analysis"
+                            class="text-sm text-secondary hover:text-white mt-3 inline-block font-medium">View Project
+                            <i class="fas fa-external-link-alt ml-1"></i></a>
+                    </div>
+
+                    <div
+                        class="project-card bg-dark-card p-6 rounded-xl shadow-xl border border-gray-700 transform hover:scale-[1.02] transition duration-300">
+                        <h3 class="text-2xl font-bold text-primary mb-2">Stock Time Series</h3>
+                        <p class="text-gray-300">
+                            Analyzes historical stock prices using time series techniques to identify patterns and
+                            forecast future trends.
+                        </p>
+                        <!-- Add a placeholder link -->
+                        <a href="https://github.com/himanshumallick3007/stock-timeseries-project"
+                            class="text-sm text-secondary hover:text-white mt-3 inline-block font-medium">View Project
+                            <i class="fas fa-external-link-alt ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--report analysis-------------------------------------->
+        <section id="reports" class="section bg-dark-card">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">Data Analysis Reports</h2>
+                <div class="reports-grid max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div
+                        class="report-card bg-dark-bg rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 border border-gray-700">
+                        <div class="h-40 bg-gray-700 flex items-center justify-center text-gray-400 font-bold">
+                            <i class="fas fa-chart-bar text-4xl mr-2 text-secondary"></i>
+                            [Report Image 1: Sales Dashboard]
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">Sales Performance Dashboard</h3>
+                            <p class="text-sm text-gray-400 mb-3">Key metrics and trends visualization using Power
+                                BI/Tableau.
+                            </p>
+                            <a href="https://imgs.search.brave.com/ChBnXbJ5_3v2D2vmlY8uL9Jb-v0-YBKagDsm2eVR6MI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LnBo/ZGF0YS5pby93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMy8xMS9m/ZWF0dXJlZC1pbWFn/ZS0xMy5qcGc"
+                                target="_blank"
+                                class="text-sm text-primary hover:text-white font-medium inline-flex items-center">
+                                View Report <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="report-card bg-dark-bg rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 border border-gray-700">
+                        <div class="h-40 bg-gray-700 flex items-center justify-center text-gray-400 font-bold">
+                            <i class="fas fa-users-slash text-4xl mr-2 text-secondary"></i>
+                            [Report Image 2: Churn Analysis]
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">Customer Churn Analysis</h3>
+                            <p class="text-sm text-gray-400 mb-3">Statistical modeling to identify and predict customer
+                                attrition.</p>
+                            <a href="https://imgs.search.brave.com/0_IhX4oA8Zzsg4di6a-Nw9ZkWI5bXf2TfIogXGlVnkI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aGFzaG5vZGUuY29t/L3Jlcy9oYXNobm9k/ZS9pbWFnZS91cGxv/YWQvdjE2NzI5MDY4/MTEzNzcvZTgwOGY5/N2MtMzhhYi00ZDg2/LTgzMWItODExZmMw/OGJmZjc0LnBuZz93/PTE2MDAmaD04NDAm/Zml0PWNyb3AmY3Jv/cD1lbnRyb3B5JmF1/dG89Y29tcHJlc3Ms/Zm9ybWF0JmZvcm1h/dD13ZWJw"
+                                target="_blank"
+                                class="text-sm text-primary hover:text-white font-medium inline-flex items-center">
+                                View Report <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="report-card bg-dark-bg rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 border border-gray-700">
+                        <div class="h-40 bg-gray-700 flex items-center justify-center text-gray-400 font-bold">
+                            <i class="fas fa-sack-dollar text-4xl mr-2 text-secondary"></i>
+                            [Report Image 3: Financial Risk]
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">Financial Risk Assessment</h3>
+                            <p class="text-sm text-gray-400 mb-3">Analysis of market volatility and portfolio risk
+                                metrics.</p>
+                            <a href="https://imgs.search.brave.com/BBgZlhKlVHPt2yGSo_TfbPUul6wXT-qkclNIVooHj_U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/NmNsaWNrcy5jb20v/aHMtZnMvaHViZnMv/QXNzZXNzbWVudCUy/MHJlc3BvbnNlJTIw/YnJlYWtkb3duLnBu/Zz93aWR0aD0xMTk4/Jm5hbWU9QXNzZXNz/bWVudCUyMHJlc3Bv/bnNlJTIwYnJlYWtk/b3duLnBuZw"
+                                target="_blank"
+                                class="text-sm text-primary hover:text-white font-medium inline-flex items-center">
+                                View Report <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="report-card bg-dark-bg rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 border border-gray-700">
+                        <div class="h-40 bg-gray-700 flex items-center justify-center text-gray-400 font-bold">
+                            <i class="fas fa-globe text-4xl mr-2 text-secondary"></i>
+                            [Report Image 4: Web Traffic]
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">Website Traffic Analysis</h3>
+                            <p class="text-sm text-gray-400 mb-3">Deep dive into user behavior, sources, and conversion
+                                rates.
+                            </p>
+                            <a href="https://imgs.search.brave.com/II-Vaz-7q9kc55At0MFVhGRRYAINimWd4gDmsTaAuOA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jaGFy/dGV4cG8uY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMTAveW91LXNl/ZS1zYW5rZXktZGlh/Z3JhbS13aXRob3V0/LWNoYXJ0ZXhwby13/YXRlcm1hcmstYWZ0/ZXItZG9pbmctY29u/ZGl0aW9uYWwtZm9y/bWF0dGluZy1pbi1w/b3dlci1iaS5qcGc"
+                                target="_blank"
+                                class="text-sm text-primary hover:text-white font-medium inline-flex items-center">
+                                View Report <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="report-card bg-dark-bg rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 border border-gray-700">
+                        <div class="h-40 bg-gray-700 flex items-center justify-center text-gray-400 font-bold">
+                            <i class="fas fa-hand-holding-heart text-4xl mr-2 text-secondary"></i>
+                            [Report Image 5: HR Satisfaction]
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">Employee Satisfaction Survey</h3>
+                            <p class="text-sm text-gray-400 mb-3">Visualization of sentiment and key drivers of employee
+                                happiness.</p>
+                            <a href="https://imgs.search.brave.com/RoYXyYOb9SbqxZLzaYyUT5gKHBDA1CHzaWsc4S6U8WQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sZWFy/bi5taWNyb3NvZnQu/Y29tL2VuLXVzL3Bv/d2VyLWJpL2NyZWF0/ZS1yZXBvcnRzL21l/ZGlhL3NhbXBsZS1o/dW1hbi1yZXNvdXJj/ZXMvaHItc2FtcGxl/LWJhZC1oaXJlcy1w/YWdlLnBuZw"
+                                target="_blank"
+                                class="text-sm text-primary hover:text-white font-medium inline-flex items-center">
+                                View Report <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="report-card bg-dark-bg rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 border border-gray-700">
+                        <div class="h-40 bg-gray-700 flex items-center justify-center text-gray-400 font-bold">
+                            <i class="fas fa-wave-square text-4xl mr-2 text-secondary"></i>
+                            [Report Image 6: Time Series]
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">Time Series Forecasting Report</h3>
+                            <p class="text-sm text-gray-400 mb-3">Predictive modeling for future trends (e.g.,
+                                inventory,
+                                demand).</p>
+                            <a href="https://imgs.search.brave.com/5KFHrtE7AiKAoxahECDIBg9fKhB5OV-VJarLj5OPNm0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5kYXRhY2FtcC5j/b20vbGVnYWN5L3Yx/NzIyMDE1MTI3L2lt/YWdlXzcxNDYyMjhj/ZjQucG5n"
+                                target="_blank"
+                                class="text-sm text-primary hover:text-white font-medium inline-flex items-center">
+                                View Report <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ======= CONTACT SECTION (Updated with Tailwind) ======= -->
+        <section id="contact" class="contact section bg-dark-card">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">Contact Me</h2>
+                <form class="contact-form max-w-lg mx-auto space-y-4 p-8 bg-dark-bg rounded-xl shadow-2xl">
+                    <input type="text" placeholder="Your Name" required
+                        class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-primary focus:outline-none text-white">
+                    <input type="email" placeholder="Your Email" required
+                        class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-primary focus:outline-none text-white">
+                    <textarea placeholder="Your Message" required rows="4"
+                        class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-primary focus:outline-none text-white"></textarea>
+                    <button type="submit"
+                        class="btn w-full bg-secondary hover:bg-emerald-600 text-dark-bg font-bold py-3 rounded-lg shadow-xl transition duration-300 transform hover:scale-105">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                    <p class="text-center text-gray-400 mt-4">
+                        <i class="fas fa-envelope mr-2"></i>Email: <a href="mailto:mallickhimanshu1850@gmail.com"
+                            class="text-primary hover:underline">mallickhimanshu1850@gmail.com</a>
+                    </p>
+                    <p class="text-center text-gray-400">
+                        <i class="fas fa-phone mr-2"></i>Phone: +91 9907491850
+                    </p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="bg-dark-bg py-6 text-center border-t border-gray-700">
+        <div class="container mx-auto">
+            <p class="text-gray-400 text-sm">© 2025 Himanshu Mallick</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="https://github.com/himanshumallick3007" target="_blank"
+                    class="text-gray-400 hover:text-primary transition duration-300"><i
+                        class="fab fa-github text-xl"></i></a>
+                <a href="https://www.linkedin.com/in/himanshu-mallick-2386872a5/" target="_blank"
+                    class="text-gray-400 hover:text-primary transition duration-300"><i
+                        class="fab fa-linkedin text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Typing Animation JS (kept original logic) -->
+    <script>
+        const textArray = ["Data Analyst", "Machine Learning Enthusiast", "Real World project Developer"];
+        let index = 0, charIndex = 0;
+        const typingElement = document.getElementById("typing");
+
+        function type() {
+            if (charIndex < textArray[index].length) {
+                typingElement.textContent += textArray[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 100);
+            } else {
+                setTimeout(erase, 1500);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typingElement.textContent = textArray[index].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 50);
+            } else {
+                index = (index + 1) % textArray.length;
+                setTimeout(type, 500);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", type);
+    </script>
+
+    <!-- Hero Image Floating Animation CSS (Inline for single file) -->
+    <style>
+        @keyframes float {
+            0% {
+                transform: translatey(0px);
+            }
+
+            50% {
+                transform: translatey(-15px);
+            }
+
+            100% {
+                transform: translatey(0px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</body>
+
+</html>
